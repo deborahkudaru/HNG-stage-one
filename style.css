@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: #edd2ff;
+}
+
+#goals-list {
+  width: 80%;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 7px;
+}
+
+h2,
+h3 {
+  color: rgb(44, 44, 44);
+}
+
+.num {
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: #d8a1fd;
+  color: white;
+  display: inline;
+  border-radius: 100%;
+  position: relative;
+  right: 40px;
+  bottom: 30px;
+}
+
+.num-one {
+  padding: 0 14px;
+}
+
+.num-two,
+.num-three,
+.num-four {
+  padding: 0 10px;
+}
+
+.goal-container {
+  margin-bottom: 30px;
+  background-color: rgb(255, 248, 248);
+  padding: 20px 30px 60px 30px;
+  border: 0.5px solid #cecbc6;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#goals-list p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #616161;
+  line-height: 2;
+}
+
+.goal-flex {
+  display: flex;
+  gap: 30px;
+}
+
+/* mobile view */
+@media (max-width: 600px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.5rem;
+  }
+
+  #goals-list {
+    width: 80%;
+  }
+
+  .goal-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* ipad and tab view */
+@media (min-width: 600px) and (max-width: 900px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.5rem;
+  }
+
+  #goals-list {
+    width: 70%;
+  }
+
+  .goal-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

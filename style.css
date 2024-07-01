@@ -11,9 +11,9 @@ body {
   padding-bottom: 100px;
 }
 
-img {
+/* img {
   margin-left: 30%;
-}
+} */
 
 #intro,
 #goals-list,
@@ -135,7 +135,7 @@ h3 {
   }
 
   #intro p {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
 
   img {
@@ -154,7 +154,7 @@ h3 {
   }
 
   .goal-desc{
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
 }
 

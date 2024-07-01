@@ -19,26 +19,40 @@
   <body>
     <!-- introduction section -->
     <div id="intro">
-      <div class="flex">
-        <div >
-          <p>Welcome, I'm </p>
-          <h1><span>Deborah Kudaru.</span><br>A Web Developer</h1>
-          <p>A Software Developer specializing in building Frontends of websites and web applications. I am working with my hands to make magic on the internet</p>
+      <div>
+        <div class="day-time">
+          <p data-testid="currentDay" id="currentDay" class="day"></p>
+          <p data-testid="currentTimeUTC" id="currentTimeUTC" class="time"></p>
         </div>
-
-        <img src="./img/profile-img1.jpg" alt="slack-profile" data-testid="slackProfilePicture"/>
+        <p>Welcome, I'm</p>
+        <h1>
+          <span data-testid="slackDisplayName">Deborah Kudaru.</span><br />A
+          Frontend Developer
+        </h1>
+        <p class="intro-desc">
+          A Software Developer and HNG11 Intern specializing in building
+          Frontends of websites and web applications. I will be sharing my tech
+          goals for the next two years
+        </p>
       </div>
+
+      <img
+        src="./img/profile-img.jpg"
+        alt="slack-profile"
+        data-testid="slackProfilePicture"
+      />
+  
     </div>
 
     <!-- goals section -->
     <div>
       <h2>My Tech Goals For The Next Two Years</h2>
       <div id="goals-list">
-        <div class="goal-flex">
+        <div class="goal-flex-one">
           <div class="goal-container">
             <div class="num num-one">1</div>
             <h3>Work in a Tech Company as a Junior Developer</h3>
-            <p>
+            <p class="goal-desc">
               With about 2 years of experience, I know a lot about web
               development and built projects surrounding it. So in the next two
               years more, I hope to be a junior developer so I am currently
@@ -49,7 +63,7 @@
           <div class="goal-container">
             <div class="num num-two">2</div>
             <h3>Learn New Langauges</h3>
-            <p>
+            <p class="goal-desc">
               Currently, I have an acceptable knowlegde on Python and
               JavaScript, even with that, I want to learn other languages in the
               next two years like C++, Java and maybe I will want to add more
@@ -57,11 +71,11 @@
             </p>
           </div>
         </div>
-        <div class="goal-flex">
+        <div class="goal-flex-two">
           <div class="goal-container">
             <div class="num num-three">3</div>
             <h3>Teach a Lot of People How to Code</h3>
-            <p>
+            <p class="goal-desc">
               I have taught a few about web development, both the theory and
               practical and they learned so much. I would want to teach more
               people officially in the coming years.
@@ -71,7 +85,7 @@
           <div class="goal-container">
             <div class="num num-four">4</div>
             <h3>Create a Blog Where I Share My Journey in Tech</h3>
-            <p>
+            <p class="goal-desc">
               I always like seeing stories of how techies started and where they
               are and it inspires me a lot. I want to create a blog where I
               share my journey in tech so far so people will get inspired.
@@ -80,5 +94,15 @@
         </div>
       </div>
     </div>
+    
+    <!-- link section -->
+    <div id="link-section">
+      <p data-testid="slackEmail">Email Address: deborahkudaru@email.com</p>
+      <a href="http://hng.tech/learn">aaa</a>
+      <a href="http://keyword.dog">sss</a>
+      <a href="http://scrapeanyweb.site">fff</a>
+    </div>
+
+    <script src="./index.js" charset="utf-8"></script>
   </body>
 </html>

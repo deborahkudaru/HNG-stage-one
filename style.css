@@ -5,20 +5,25 @@ body {
   background-color: #edd2ff;
 }
 
+/* introduction section */
 #intro {
-  padding-top: 120px;
-  padding-bottom: 200px;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+img {
+  margin-left: 30%;
 }
 
 #intro,
-#goals-list {
+#goals-list,
+#link-section {
   width: 80%;
   margin: auto;
 }
 
-.flex {
-  display: flex;
-  gap: 40px;
+.intro-desc {
+  margin-bottom: 20px;
 }
 
 p {
@@ -29,10 +34,6 @@ p {
   font-size: 1rem;
   font-weight: 500;
   line-height: 2;
-}
-
-img {
-  height: auto;
 }
 
 h1 {
@@ -51,11 +52,16 @@ h2 {
 h3 {
   font-size: 1.5rem;
   margin-bottom: 7px;
-}
-
-h3 {
   color: rgb(44, 44, 44);
   font-family: "Montserrat", sans-serif;
+}
+
+.day-time {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+  position: relative;
+  top: 30px;
 }
 
 .num {
@@ -71,7 +77,7 @@ h3 {
 }
 
 .num-one {
-  padding: 0 14px;
+  padding: 0 10px;
 }
 
 .num-two,
@@ -88,17 +94,25 @@ h3 {
   border-radius: 10px;
 }
 
-#goals-list p {
+/* goal section */
+
+.goal-desc {
   font-size: 1rem;
   font-weight: 500;
   color: #616161;
   line-height: 2;
 }
 
-.goal-flex {
+.goal-flex-one,
+.goal-flex-two {
   display: flex;
   gap: 30px;
 }
+
+.goal-flex-one {
+  margin-bottom: 20px;
+}
+
 
 /* mobile view */
 @media (max-width: 600px) {
@@ -107,41 +121,43 @@ h3 {
     flex-direction: column;
   }
 
-  h1{
-    font-size: 3rem;
+  h1 {
+    font-size: 2.5rem;
   }
 
-
   h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     padding: 0 50px;
   }
 
- 
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   #intro p {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
-  
 
-
-  p {
-    font-size: 0.5rem;
+  img {
+    margin: 0%;
   }
 
   #goals-list {
     width: 80%;
   }
 
-  .goal-flex {
+  .goal-flex-one,
+  .goal-flex-two {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
+
+  .goal-desc{
+    font-size: 0.75rem;
+  }
 }
+
 
 /* ipad and tab view */
 @media (min-width: 600px) and (max-width: 900px) {
@@ -150,8 +166,7 @@ h3 {
     flex-direction: column;
   }
 
-
-  h1{
+  h1 {
     font-size: 3rem;
   }
 
@@ -168,17 +183,26 @@ h3 {
     font-size: 0.5rem;
   }
 
-  #intro p {
-    font-size: 1rem;
+  img {
+    margin: 0%;
   }
-  
+
+  #intro p {
+    font-size: 0.85rem;
+  }
+
   #goals-list {
     width: 70%;
   }
 
-  .goal-flex {
+  .goal-flex-one,
+  .goal-flex-two {
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+
+  .goal-desc{
+    font-size: 0.85rem;
   }
 }
